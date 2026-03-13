@@ -14,6 +14,7 @@
     hasInteracted: false,
     isPaused: false,
     platformMode: CONFIG.platformMode || "all",
+    showInfo: false,
   };
 
   // ── DOM refs ───────────────────────────────
@@ -22,6 +23,7 @@
   const pauseIcon  = document.getElementById("pause-icon");
   const tapOverlay = document.getElementById("tap-overlay");
   const progressEl = document.getElementById("progress");
+  const videoInfo  = document.getElementById("video-info");
 
   // ── Slides (we keep 3 in the DOM: prev, current, next) ──
   let slides = { above: null, current: null, below: null };
@@ -175,6 +177,42 @@
     } else {
       sourceTag.classList.add("hidden");
     }
+    updateVideoInfo();
+  }
+
+  function formatViews(n) {
+    if (!n) return null;
+    if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+    if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+    return n.toString();
+  }
+
+  function updateVideoInfo() {
+    if (!state.showInfo) {
+      videoInfo.classList.add("hidden");
+      return;
+    }
+    const item = state.queue[state.currentIndex];
+    const meta = (typeof METADATA !== "undefined") && METADATA[item.src];
+
+    if (!meta) {
+      videoInfo.classList.add("hidden");
+      return;
+    }
+
+    const viewsStr = meta.views ? `<span class="info-views">${formatViews(meta.views)} views</span>` : "";
+    const platformStr = meta.platform ? meta.platform : "";
+    const authorStr = meta.author ? meta.author : "";
+
+    videoInfo.innerHTML = `
+      <div class="info-title">${meta.title || ""}</div>
+      <div class="info-meta">
+        ${authorStr ? `<span>${authorStr}</span>` : ""}
+        ${platformStr ? `<span>${platformStr}</span>` : ""}
+        ${viewsStr}
+      </div>
+    `;
+    videoInfo.classList.remove("hidden");
   }
 
   function updateProgress() {
@@ -216,6 +254,22 @@
       });
       selector.appendChild(btn);
     });
+
+    // Info toggle button
+    const sep = document.createElement("div");
+    sep.style.cssText = "width:1px;background:rgba(255,255,255,0.2);margin:2px 2px;";
+    selector.appendChild(sep);
+
+    const infoBtn = document.createElement("button");
+    infoBtn.className = "mode-btn";
+    infoBtn.textContent = "Info";
+    infoBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      state.showInfo = !state.showInfo;
+      infoBtn.classList.toggle("active", state.showInfo);
+      updateVideoInfo();
+    });
+    selector.appendChild(infoBtn);
 
     document.body.appendChild(selector);
   }
