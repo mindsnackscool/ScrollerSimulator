@@ -145,9 +145,9 @@ html, body {
 /* ── Video description (always visible, TikTok-style) ── */
 .video-desc {
   position: fixed;
-  bottom: max(env(safe-area-inset-bottom, 16px), 16px);
+  bottom: max(env(safe-area-inset-bottom, 60px), 60px);
   left: 0;
-  right: 0;
+  right: 60px;
   z-index: 100;
   pointer-events: none;
   color: #fff;
@@ -155,8 +155,6 @@ html, body {
   line-height: 1.4;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   padding: 0 16px;
-  /* Center content within the video area */
-  max-width: 100%;
 }
 
 .video-desc .desc-author {

@@ -76,5 +76,5 @@ const CONFIG = {
   // ── Behaviour ────────────────────────────────
   showSourceTag: false,
   loopVideos: true,
-  startMuted: true,
+  startMuted: false,
 };
