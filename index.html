@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Scroller Simulator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="feed-container">
+    <!-- Video slides are injected here by JS -->
+  </div>
+
+  <!-- Subtle indicator showing video source -->
+  <div id="source-tag" class="source-tag hidden"></div>
+
+  <!-- Tap zones for play/pause -->
+  <div id="tap-overlay" class="tap-overlay"></div>
+
+  <!-- Paused icon -->
+  <div id="pause-icon" class="pause-icon hidden">
+    <svg viewBox="0 0 24 24" fill="white" width="80" height="80">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+
+  <!-- Progress dots -->
+  <div id="progress" class="progress"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
