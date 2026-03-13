@@ -142,41 +142,70 @@ html, body {
   color: #fff;
 }
 
-/* ── Video info overlay ── */
-.video-info {
+/* ── Video description (always visible, TikTok-style) ── */
+.video-desc {
   position: fixed;
   bottom: max(env(safe-area-inset-bottom, 16px), 16px);
-  left: 12px;
-  right: 12px;
+  left: 0;
+  right: 0;
   z-index: 100;
   pointer-events: none;
   color: #fff;
   font-size: 13px;
   line-height: 1.4;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
-  transition: opacity 0.3s;
+  padding: 0 16px;
+  /* Center content within the video area */
+  max-width: 100%;
 }
 
-.video-info.hidden {
-  opacity: 0;
-}
-
-.video-info .info-title {
-  font-weight: 600;
-  font-size: 14px;
+.video-desc .desc-author {
+  font-weight: 700;
+  font-size: 15px;
   margin-bottom: 4px;
 }
 
-.video-info .info-meta {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  gap: 10px;
+.video-desc .desc-title {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2px;
 }
 
-.video-info .info-views {
-  color: rgba(255, 255, 255, 0.9);
+
+/* ── Stats overlay (toggled via Info button) ── */
+.video-stats {
+  position: fixed;
+  right: 12px;
+  bottom: 120px;
+  z-index: 100;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: opacity 0.3s;
+}
+
+.video-stats.hidden {
+  opacity: 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-item svg {
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
+}
+
+.stat-value {
+  color: #fff;
+  font-size: 11px;
   font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 /* ── Scrollbar hide (desktop testing) ── */
