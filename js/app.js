@@ -282,7 +282,46 @@
     selector.className = "mode-selector";
     selector.id = "mode-selector";
 
-    const options = ["all", ...platforms, "mine"];
+    // Reorder: mine first, then all, then platforms (facebook last)
+    const platformsWithoutFb = platforms.filter((p) => p !== "facebook");
+    const hasFacebook = platforms.includes("facebook");
+    const options = ["mine", "all", ...platformsWithoutFb];
+    if (hasFacebook) options.push("facebook");
+
+    // Info toggle button first
+    const infoBtn = document.createElement("button");
+    infoBtn.className = "mode-btn";
+    infoBtn.textContent = "Info";
+    infoBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      state.showInfo = !state.showInfo;
+      infoBtn.classList.toggle("active", state.showInfo);
+      updateVideoStats();
+    });
+    selector.appendChild(infoBtn);
+
+    // Fullscreen toggle
+    const fsBtn = document.createElement("button");
+    fsBtn.className = "mode-btn";
+    fsBtn.textContent = "⛶";
+    fsBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+        fsBtn.classList.add("active");
+      } else {
+        document.exitFullscreen();
+        fsBtn.classList.remove("active");
+      }
+    });
+    selector.appendChild(fsBtn);
+
+    // Separator
+    const sep = document.createElement("div");
+    sep.style.cssText = "width:1px;background:rgba(255,255,255,0.2);margin:2px 2px;";
+    selector.appendChild(sep);
+
+    // Platform buttons
     options.forEach((mode) => {
       const btn = document.createElement("button");
       btn.className = "mode-btn" + (mode === state.platformMode ? " active" : "");
@@ -294,21 +333,10 @@
       selector.appendChild(btn);
     });
 
-    // Info toggle button
-    const sep = document.createElement("div");
-    sep.style.cssText = "width:1px;background:rgba(255,255,255,0.2);margin:2px 2px;";
-    selector.appendChild(sep);
-
-    const infoBtn = document.createElement("button");
-    infoBtn.className = "mode-btn";
-    infoBtn.textContent = "Info";
-    infoBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      state.showInfo = !state.showInfo;
-      infoBtn.classList.toggle("active", state.showInfo);
-      updateVideoStats();
+    // Update fullscreen button on exit
+    document.addEventListener("fullscreenchange", () => {
+      fsBtn.classList.toggle("active", !!document.fullscreenElement);
     });
-    selector.appendChild(infoBtn);
 
     document.body.appendChild(selector);
   }
