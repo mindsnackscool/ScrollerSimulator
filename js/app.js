@@ -59,7 +59,7 @@
 
   function pickVideo() {
     const normalPool = getNormalVideos();
-    const isMine = shouldPickMine();
+    const isMine = state.platformMode === "mine" ? true : shouldPickMine();
     const pool = isMine ? CONFIG.myVideos : normalPool;
     const watched = isMine ? state.watchedMine : state.watchedNormal;
 
@@ -282,7 +282,7 @@
     selector.className = "mode-selector";
     selector.id = "mode-selector";
 
-    const options = ["all", ...platforms];
+    const options = ["all", ...platforms, "mine"];
     options.forEach((mode) => {
       const btn = document.createElement("button");
       btn.className = "mode-btn" + (mode === state.platformMode ? " active" : "");
@@ -321,8 +321,9 @@
     state.watchedNormal.clear();
     state.watchedMine.clear();
 
-    // Update active button
+    // Update active button (skip Info button)
     document.querySelectorAll(".mode-btn").forEach((btn) => {
+      if (btn.textContent === "Info") return;
       btn.classList.toggle("active", btn.textContent.toLowerCase() === mode);
     });
 
@@ -460,7 +461,7 @@
 
   function init() {
     const normalPool = getNormalVideos();
-    const totalVideos = normalPool.length + CONFIG.myVideos.length;
+    const totalVideos = state.platformMode === "mine" ? CONFIG.myVideos.length : normalPool.length + CONFIG.myVideos.length;
 
     if (totalVideos === 0) {
       container.innerHTML = `

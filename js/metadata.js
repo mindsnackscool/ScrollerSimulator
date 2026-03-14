@@ -3,211 +3,221 @@
  * Used when "Show Info" toggle is enabled
  */
 const METADATA = {
-  // YouTube
-  "videos/normal/youtube/Can_you_Guess_the_Fractal_shor_e9CCJ0OV-UM.mp4": {
-    title: "Can you Guess the Fractal?",
-    views: 2629807,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/4_Reasons_to_NOT_Vertically_Mo_gGRGJvqy9p8.mp4": {
-    title: "4 Reasons to NOT Vertically Mount Your Graphics Card",
-    views: 1288840,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/Imagine_falling_into_the_Mande_HcyGjt3pC1w.mp4": {
-    title: "Imagine falling into the Mandelbrot Fractals",
-    views: 6501998,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/Extremely_satisfying_Fractal_J_7ygeZ4M5aks.mp4": {
-    title: "Extremely satisfying Fractal Jigsaw",
-    views: 2864807,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/I_cannot_believe_it_was_that_d_pAI-wFhvkYo.mp4": {
-    title: "I cannot believe it was that difficult",
-    views: 108651368,
-    platform: "youtube",
-    author: "@puzzlesolving"
-  },
-  "videos/normal/youtube/Satisfying_Dice_Roll_and_Drop__SbI5EWTE4Uk.mp4": {
-    title: "Satisfying Dice Roll and Drop Perfect Loop",
-    views: 142589595,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/4-7-8_Calm_Breathing_Exercise___fqr8XNubEI.mp4": {
-    title: "4-7-8 Calm Breathing Exercise",
-    views: 3042236,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/Breathing_Trick_Takes_Away_Str__S-Xyfp3D3k.mp4": {
-    title: "Breathing Trick Takes Away Stress and Anxiety",
-    views: 1190988,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/ASMR_Clearing_Your_Foggy_Mind__DP-qqpI431M.mp4": {
-    title: "ASMR Clearing Your Foggy Mind Instantly",
-    views: 198464,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/Reiki_ASMR_Energy_Healing_vh6lcO95NP4.mp4": {
-    title: "Reiki ASMR Energy Healing",
-    views: 354685,
-    platform: "youtube",
-    author: "@shorts"
-  },
-  "videos/normal/youtube/Headspace_Breathing_Technic_-__-YHRb2S4uvg.mp4": {
-    title: "Headspace Breathing Technic",
-    views: 205220,
-    platform: "youtube",
-    author: "@headspace"
-  },
-  "videos/normal/youtube/Quick_meditation_to_ground_you_z5iC0g3zjwI.mp4": {
-    title: "Quick meditation to ground you into this moment",
-    views: 50407,
-    platform: "youtube",
-    author: "@shorts"
-  },
-
-  // TikTok (views not fetched — platform makes it hard)
-  "videos/normal/tiktok/Take_some_deep_breaths._Let_more_light_i_7513644797110979886.mp4": {
-    title: "Take some deep breaths. Let more light in",
-    platform: "tiktok",
-    author: "@headspace"
-  },
-  "videos/normal/tiktok/Float_with_us_for_a_few_deep_breaths._de_7418972557832883487.mp4": {
-    title: "Float with us for a few deep breaths",
-    platform: "tiktok",
-    author: "@headspace"
-  },
-  "videos/normal/tiktok/Day_one_of_posting_fractals_everyday_unt_7398471582961782048.mp4": {
-    title: "Day one of posting fractals everyday",
-    platform: "tiktok",
-    author: "@thefractalguy"
-  },
-  "videos/normal/tiktok/fractalart_fractal_hypnotic_hypnoticart__7442751149045861654.mp4": {
-    title: "Fractal art hypnotic animation",
+  // TikTok
+  "videos/normal/tiktok/#animationart #digitalanimation #animati_7433057630093856033.mp4": {
+    title: "Mesmerizing Fractal Animation",
+    views: 397800,
+    likes: 27000,
+    comments: 82,
+    shares: 3360,
     platform: "tiktok",
     author: "@steveland_art"
   },
-  "videos/normal/tiktok/The_hardest_but_most_satisfying_jigsaw_p_7126975005690187013.mp4": {
-    title: "The hardest but most satisfying jigsaw puzzle",
+  "videos/normal/tiktok/#mindblown #hypnotic #boostyourbrain #ha_7326577435623918880.mp4": {
+    title: "Hypnotic Fractal Hallucinations",
+    views: 25700,
+    likes: 274,
+    comments: 3,
+    shares: 17,
     platform: "tiktok",
-    author: "@henrypuzzles"
+    author: "@steveland_art"
   },
-  "videos/normal/tiktok/The_power_to_create_peace_begins_with_yo_7565790148105997623.mp4": {
-    title: "The power to create peace begins with you",
+  "videos/normal/tiktok/The sacred geometry of Mandelbrot Fracta_7296362883640790305.mp4": {
+    title: "Sacred Geometry of Mandelbrot Fractals",
+    views: 947100,
+    likes: 85500,
+    comments: 1206,
+    shares: 3851,
     platform: "tiktok",
-    author: "@lovetuner528hz"
+    author: "@fascinating.fractals"
   },
-  "videos/normal/tiktok/Just_a_moment_to_reset._DeepBreaths_Inha_7063512121090428206.mp4": {
-    title: "Just a moment to reset. Deep Breaths",
+  "videos/normal/tiktok/#iceonflame #fractals #fractal #fractala_7488007509299580182.mp4": {
+    title: "Ice on Flame Fractal Animation",
+    views: 51000,
+    likes: 395,
+    comments: 13,
+    shares: 31,
     platform: "tiktok",
-    author: "@headspace"
+    author: "@steveland_art"
   },
-  "videos/normal/tiktok/2-4-6-4_breathing_resets_your_energy_flo_7612204885651574049.mp4": {
-    title: "2-4-6-4 breathing resets your energy flow",
+  "videos/normal/tiktok/#technomusic #fractal #animation #vortex_7385548496977382688.mp4": {
+    title: "Fractal Spiral Vortex",
+    views: 26500,
+    likes: 192,
+    comments: 5,
+    shares: 13,
     platform: "tiktok",
-    author: "@daily.breathing"
+    author: "@steveland_art"
   },
-  "videos/normal/tiktok/Video_5_in_series_of_10._432Hz_is_the_FI_7316850883852029192.mp4": {
-    title: "432Hz — the fifth healing frequency",
+  "videos/normal/tiktok/#trippy #trippyart #trippyvideos #trippy_7254970383030357275.mp4": {
+    title: "Trippy Fractal Art",
+    views: 8000000,
+    likes: 1200000,
+    comments: 6286,
+    shares: 105500,
     platform: "tiktok",
-    author: "@grantempowerment"
+    author: "@steveland_art"
   },
-  "videos/normal/tiktok/Hope_you_like_this_one_brainteaser_puzzl_7486061336791715079.mp4": {
-    title: "Brain teaser puzzle challenge",
+  "videos/normal/tiktok/This 10 second breathing technique will _7569282898751245582.mp4": {
+    title: "10 Second Breathing Technique",
+    views: 57800,
+    likes: 2755,
+    comments: 40,
+    shares: 425,
     platform: "tiktok",
-    author: "@pinkpencilmath"
+    author: "@melrobbins"
   },
-  "videos/normal/tiktok/3D_brain_teaser_puzzle_tutorial_no.1_puz_7099349980674034949.mp4": {
-    title: "3D brain teaser puzzle tutorial no.1",
+  "videos/normal/tiktok/4–6 breathing exercise filmed on a beach_7613823466759916832.mp4": {
+    title: "4-6 Breathing Exercise on a Beach",
+    views: 1661,
+    likes: 101,
+    comments: 2,
+    shares: 11,
     platform: "tiktok",
-    author: "@splendidtoys"
+    author: "@guided_breathing"
   },
-  "videos/normal/tiktok/A_little_wooden_brain_teaser_puzzle_to_g_7170119032929307950.mp4": {
-    title: "A little wooden brain teaser puzzle",
-    platform: "tiktok",
-    author: "@pieces.of.amber"
-  },
-  "videos/normal/tiktok/No_One_Can_Solve_This_Brain_Teaser_Puzzl_7434908651069967671.mp4": {
-    title: "No One Can Solve This Brain Teaser Puzzle",
+  "videos/normal/tiktok/🧠 Try Solving This Clever Puzzle.. #brai_7514310097015819576.mp4": {
+    title: "Try Solving This Clever Puzzle",
+    views: 3000000,
+    likes: 19800,
+    comments: 522,
+    shares: 612,
     platform: "tiktok",
     author: "@theezzshow"
   },
-  "videos/normal/tiktok/Breathe_with_me_let_these_sink_in_everyt_7590556748809866510.mp4": {
-    title: "Breathe with me, let these sink in",
+  "videos/normal/tiktok/5 Fun Brain Teasers 🧠 #gameshow #brainte_7395184580048719110.mp4": {
+    title: "5 Fun Brain Teasers",
+    views: 830000,
+    likes: 22200,
+    comments: 268,
+    shares: 552,
     platform: "tiktok",
-    author: "@queenpoweracademyy"
+    author: "@theezzshow"
+  },
+  "videos/normal/tiktok/🧠 Classic Brain Teaser Puzzles.. #braint_7508009368068164870.mp4": {
+    title: "Classic Brain Teaser Puzzles",
+    views: 1900000,
+    likes: 70700,
+    comments: 1049,
+    shares: 1167,
+    platform: "tiktok",
+    author: "@theezzshow"
+  },
+  "videos/normal/tiktok/Tricky brain teasers 🧠 #gameshow #puzzle_7391478110304177413.mp4": {
+    title: "Tricky Brain Teasers",
+    views: 8200000,
+    likes: 439500,
+    comments: 1223,
+    shares: 2922,
+    platform: "tiktok",
+    author: "@theezzshow"
+  },
+  "videos/normal/tiktok/Brain Teasers That Will Break Your Brain_7362578269796879659.mp4": {
+    title: "Brain Teasers That Will Break Your Brain",
+    views: 10400000,
+    likes: 558800,
+    comments: 2804,
+    shares: 11100,
+    platform: "tiktok",
+    author: "@hangingoutclips"
   },
 
-  // Instagram (views not fetched)
-  "videos/normal/instagram/Video_by_brightondenevan_C9K0poTPhin.mp4": {
-    title: "Fractal DMT Molecules",
-    platform: "instagram",
-    author: "@brightondenevan"
+  // YouTube
+  "videos/normal/youtube/1 Minute Breathe Bubble ｜ Breathing Exer__v7nbvdyhtw.mp4": {
+    title: "1 Minute Breathe Bubble",
+    platform: "youtube",
+    author: "@BreatheBubble"
   },
-  "videos/normal/instagram/Video_by_everyday_naturalist_DQxQVPeEa1e.mp4": {
-    title: "Fractals in Nature: Efficient Patterns Everywhere",
-    platform: "instagram",
-    author: "@everyday_naturalist"
+  "videos/normal/youtube/Breathing exercise for stress and anxiet_eZBa63NZbbE.mp4": {
+    title: "Breathing Exercise for Stress",
+    platform: "youtube",
+    author: "@HealthLine"
   },
-  "videos/normal/instagram/Video_by_livefreelaurad_DQZNePrEaTy.mp4": {
-    title: "What we pay attention to affects our physiology",
-    platform: "instagram",
-    author: "@livefreelaurad"
+  "videos/normal/youtube/Hexagonal Tangram Wooden Puzzle Solved 🧩_EASIqBqnXXc.mp4": {
+    title: "Hexagonal Tangram Puzzle Solved",
+    platform: "youtube",
+    author: "@PuzzleMaster"
   },
-  "videos/normal/instagram/Video_by_anrejohn_DQKp6K3jWwB.mp4": {
-    title: "Fractals — repeating patterns seen in nature",
-    platform: "instagram",
-    author: "@anrejohn"
+  "videos/normal/youtube/Homeward - A Mandelbrot Fractal Zoom (2K_N0lec_cIwZM.mp4": {
+    title: "Homeward - Mandelbrot Fractal Zoom",
+    platform: "youtube",
+    author: "@MathsTown"
   },
-  "videos/normal/instagram/Video_by_matigekunstintelligentie_DVQjsY5AppY.mp4": {
-    title: "What do Fractals Sound Like part II",
-    platform: "instagram",
-    author: "@matigekunstintelligentie"
+  "videos/normal/youtube/If you love puzzle games, brain teasers,_7_ptgZqqRwU.mp4": {
+    title: "Puzzle Brain Teaser Challenge",
+    platform: "youtube",
+    author: "@PuzzleGames"
   },
-  "videos/normal/instagram/Video_by_aaronlemke_DKdyLJpOFBZ.mp4": {
-    title: "Vibe coded some fractals over the weekend",
-    platform: "instagram",
-    author: "@aaronlemke"
+  "videos/normal/youtube/If you love puzzle games, brain teasers,_PYyN1PlTTdQ.mp4": {
+    title: "Puzzle Brain Teaser Challenge 2",
+    platform: "youtube",
+    author: "@PuzzleGames"
   },
-  "videos/normal/instagram/Video_by_brucelipton_DUosDsRD1Fn.mp4": {
-    title: "The Fractal Geometry of Nature (2 of 2)",
-    platform: "instagram",
-    author: "@brucelipton"
+  "videos/normal/youtube/If you love puzzle games, brain teasers,_RsIi1iwGb-w.mp4": {
+    title: "Puzzle Brain Teaser Challenge 3",
+    platform: "youtube",
+    author: "@PuzzleGames"
   },
-  "videos/normal/instagram/Video_by_weswalz713_DPzj1vxjick.mp4": {
-    title: "Creating Mind-Bending Fractals with Metal and Swift",
-    platform: "instagram",
-    author: "@weswalz713"
+  "videos/normal/youtube/Kaleidoscope, A Mandelbrot Fractal Zoom _KSViE4nDfE4.mp4": {
+    title: "Kaleidoscope Mandelbrot Fractal Zoom",
+    platform: "youtube",
+    author: "@MathsTown"
   },
-  "videos/normal/instagram/Video_by_geometriasagrada.en_DArSNGivQLN.mp4": {
-    title: "The Barnsley fern — a fascinating fractal",
-    platform: "instagram",
-    author: "@geometriasagrada.en"
+  "videos/normal/youtube/Timeless - A Mandelbrot Fractal Zoom (2K_HqSJ6A6tcU8.mp4": {
+    title: "Timeless Mandelbrot Fractal Zoom",
+    platform: "youtube",
+    author: "@MathsTown"
   },
-  "videos/normal/instagram/Video_by_storybites.__DGykqtUzzpY.mp4": {
-    title: "It's a fractal — when you're obsessed",
+
+  // Instagram
+  "videos/normal/instagram/Video by aminshaykho_CyB19MzPvIP.mp4": {
+    title: "Brain Teaser Puzzle",
     platform: "instagram",
-    author: "@storybites._"
+    author: "@aminshaykho"
   },
-  "videos/normal/instagram/Video_by_lovetuner528hz_CkZgtbCLrV_.mp4": {
-    title: "Breathwork with the 528Hz Lovetuner",
+  "videos/normal/instagram/Video by breathing.ai_DMLhooCogdg.mp4": {
+    title: "Calming Breathing Exercise",
     platform: "instagram",
-    author: "@lovetuner528hz"
+    author: "@breathing.ai"
   },
-  "videos/normal/instagram/Video_by_banahwinn_DM90CeDgYzo.mp4": {
-    title: "528 Hz Golden Ratio Frequencies",
+  "videos/normal/instagram/Video by breathwrk_DDrw1YMOD1q.mp4": {
+    title: "4-7-8 Breathing Technique",
     platform: "instagram",
-    author: "@banahwinn"
+    author: "@breathwrk"
+  },
+  "videos/normal/instagram/Video by chakrahealingvibes_DG0Y321y8Ir.mp4": {
+    title: "Healing Frequencies Sound",
+    platform: "instagram",
+    author: "@chakrahealingvibes"
+  },
+  "videos/normal/instagram/Video by echoesoflifehealing_DQ7ITUNADGQ.mp4": {
+    title: "528Hz Healing Sound Experience",
+    platform: "instagram",
+    author: "@echoesoflifehealing"
+  },
+  "videos/normal/instagram/Video by ezzshow85_DBRLdyMOFF6.mp4": {
+    title: "Brain Teaser Riddles",
+    platform: "instagram",
+    author: "@ezzshow85"
+  },
+  "videos/normal/instagram/Video by johnmcmillan_themindscaper_DBGG0OEy7m1.mp4": {
+    title: "Mindfulness and Meditation",
+    platform: "instagram",
+    author: "@johnmcmillan_themindscaper"
+  },
+  "videos/normal/instagram/Video by namicommunicate_CnxFbxXOOpl.mp4": {
+    title: "Calming Meditation Reel",
+    platform: "instagram",
+    author: "@namicommunicate"
+  },
+  "videos/normal/instagram/Video by noellereidmd_DFf80vPSXBj.mp4": {
+    title: "Breathing Reset Technique",
+    platform: "instagram",
+    author: "@noellereidmd"
+  },
+  "videos/normal/instagram/Video by normanmarkets_C-NrWD4vYsj.mp4": {
+    title: "Sound Frequency Healing",
+    platform: "instagram",
+    author: "@normanmarkets"
   },
 };
